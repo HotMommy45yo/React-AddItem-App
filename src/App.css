@@ -1,0 +1,135 @@
+body{
+  background-color:rgb(10 25 41);
+  color:white;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: white;
+}
+
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 1.5rem;
+  
+}
+
+.break{
+  width: 100vw;
+  height: 0.1vh;
+  background: rgb(25,118,210);
+  background: linear-gradient(90deg, rgba(25,118,210,1) 9%, rgba(156,39,176,1) 75%);
+}
+
+h1{
+  color:white;
+  font-size:  9vmax;
+}
+
+h2{
+  color: white;
+  font-size: 5vmax;
+}
+
+#uploadFile {
+  width:20vw;
+}
+
+#deleteIcon {
+  position:absolute;
+  top: 0rem;
+  right:0rem;
+
+}
+
+#imageLabel {
+  margin-top: 1rem;
+  width: auto;
+  height: 1rem;
+}
+
+#divForAlert {
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40vw;
+  height: 5vh;
+  z-index: 10;
+}
+
+.allItems {
+ padding: 0;
+ width: 80vw;
+ margin-left: auto;
+ margin-right: auto;
+ height: auto;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+.allItems>h1 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.oneItem {
+  width: 80vw;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.oneItem>h1 {
+  font-size: 5rem;
+}
+
+.oneItem>h2 {
+  font-size: 3rem;
+}
+
+.itemImage {
+  max-width: 30rem;
+}
+
+@media only screen and (max-width: 700px) {
+ #uploadFile  {
+   width: 42vw;
+ }
+
+ #divForAlert{
+   width: 90vw;
+ }
+
+ .allItems>h1 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+ }
+ 
+ .itemImage {
+  max-width: 15rem;
+}
+
+.oneItem>h1 {
+  font-size: 2rem;
+}
+
+.oneItem>h2 {
+  font-size: 1rem;
+}
+}
